@@ -1,0 +1,2 @@
+client_id: sh-29927974-7d1f-4f2e-9751-f59a8149a944
+client_secret: Zqrx0QU4ivjOl3TM77zsm0Hhib8QWivO

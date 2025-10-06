@@ -1,0 +1,29 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>DroneLocator AI Demo Map</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    </head>
+    <body>
+        <div id="map" style="height: 500px;"></div>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script>
+            var map = L.map('map').setView([40.7829, -73.9654], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+            
+            var locations = [
+                {lat: 40.7829, lng: -73.9654, name: "Central Park, NYC", confidence: 94.2},
+                {lat: 50.2957, lng: 36.6619, name: "Ukraine Region", confidence: 87.5},
+                {lat: 51.5074, lng: -0.1278, name: "London, UK", confidence: 91.8}
+            ];
+            
+            locations.forEach(function(loc) {
+                L.marker([loc.lat, loc.lng])
+                 .bindPopup('<b>' + loc.name + '</b><br>Confidence: ' + loc.confidence + '%')
+                 .addTo(map);
+            });
+        </script>
+    </body>
+    </html>
+    

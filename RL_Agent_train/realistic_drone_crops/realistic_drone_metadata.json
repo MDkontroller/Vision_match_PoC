@@ -1,0 +1,509 @@
+{
+  "total_crops": 30,
+  "viewing_angle_degrees": 60,
+  "perspective_type": "realistic_drone_oblique",
+  "source_image": "sentinel2_ukraine_10km.TIF",
+  "image_info": {
+    "original_shape": [
+      975,
+      866
+    ],
+    "original_dtype": "uint16",
+    "original_range": [
+      0.0,
+      65535.0
+    ],
+    "normalized_shape": [
+      975,
+      866,
+      3
+    ],
+    "normalized_dtype": "uint8",
+    "normalized_range": [
+      0,
+      255
+    ]
+  },
+  "crops": [
+    {
+      "filename": "drone_realistic_000_192px.jpg",
+      "crop_index": 0,
+      "crop_size": 192,
+      "center_pixel": [
+        603,
+        549
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_001_192px.jpg",
+      "crop_index": 1,
+      "crop_size": 192,
+      "center_pixel": [
+        450,
+        334
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_002_128px.jpg",
+      "crop_index": 2,
+      "crop_size": 128,
+      "center_pixel": [
+        527,
+        571
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_003_128px.jpg",
+      "crop_index": 3,
+      "crop_size": 128,
+      "center_pixel": [
+        723,
+        825
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_004_192px.jpg",
+      "crop_index": 4,
+      "crop_size": 192,
+      "center_pixel": [
+        290,
+        673
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_005_256px.jpg",
+      "crop_index": 5,
+      "crop_size": 256,
+      "center_pixel": [
+        397,
+        655
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_006_192px.jpg",
+      "crop_index": 6,
+      "crop_size": 192,
+      "center_pixel": [
+        524,
+        245
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_007_128px.jpg",
+      "crop_index": 7,
+      "crop_size": 128,
+      "center_pixel": [
+        407,
+        628
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_008_320px.jpg",
+      "crop_index": 8,
+      "crop_size": 320,
+      "center_pixel": [
+        337,
+        443
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_009_320px.jpg",
+      "crop_index": 9,
+      "crop_size": 320,
+      "center_pixel": [
+        444,
+        552
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_010_128px.jpg",
+      "crop_index": 10,
+      "crop_size": 128,
+      "center_pixel": [
+        516,
+        301
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_011_128px.jpg",
+      "crop_index": 11,
+      "crop_size": 128,
+      "center_pixel": [
+        383,
+        497
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_012_192px.jpg",
+      "crop_index": 12,
+      "crop_size": 192,
+      "center_pixel": [
+        240,
+        649
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_013_192px.jpg",
+      "crop_index": 13,
+      "crop_size": 192,
+      "center_pixel": [
+        477,
+        193
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_014_192px.jpg",
+      "crop_index": 14,
+      "crop_size": 192,
+      "center_pixel": [
+        228,
+        736
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_015_320px.jpg",
+      "crop_index": 15,
+      "crop_size": 320,
+      "center_pixel": [
+        420,
+        380
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_016_256px.jpg",
+      "crop_index": 16,
+      "crop_size": 256,
+      "center_pixel": [
+        494,
+        618
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_017_256px.jpg",
+      "crop_index": 17,
+      "crop_size": 256,
+      "center_pixel": [
+        410,
+        673
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_018_256px.jpg",
+      "crop_index": 18,
+      "crop_size": 256,
+      "center_pixel": [
+        583,
+        689
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_019_256px.jpg",
+      "crop_index": 19,
+      "crop_size": 256,
+      "center_pixel": [
+        610,
+        316
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_020_128px.jpg",
+      "crop_index": 20,
+      "crop_size": 128,
+      "center_pixel": [
+        394,
+        549
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_021_192px.jpg",
+      "crop_index": 21,
+      "crop_size": 192,
+      "center_pixel": [
+        205,
+        613
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_022_128px.jpg",
+      "crop_index": 22,
+      "crop_size": 128,
+      "center_pixel": [
+        142,
+        507
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_023_192px.jpg",
+      "crop_index": 23,
+      "crop_size": 192,
+      "center_pixel": [
+        329,
+        242
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_024_128px.jpg",
+      "crop_index": 24,
+      "crop_size": 128,
+      "center_pixel": [
+        354,
+        763
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_025_256px.jpg",
+      "crop_index": 25,
+      "crop_size": 256,
+      "center_pixel": [
+        262,
+        481
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_026_320px.jpg",
+      "crop_index": 26,
+      "crop_size": 320,
+      "center_pixel": [
+        344,
+        621
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_027_320px.jpg",
+      "crop_index": 27,
+      "crop_size": 320,
+      "center_pixel": [
+        382,
+        529
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_028_192px.jpg",
+      "crop_index": 28,
+      "crop_size": 192,
+      "center_pixel": [
+        657,
+        437
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    },
+    {
+      "filename": "drone_realistic_029_192px.jpg",
+      "crop_index": 29,
+      "crop_size": 192,
+      "center_pixel": [
+        502,
+        384
+      ],
+      "viewing_angle_deg": 60,
+      "perspective_type": "oblique_drone",
+      "transformations": [
+        "perspective_warp",
+        "lighting",
+        "atmospheric"
+      ]
+    }
+  ]
+}

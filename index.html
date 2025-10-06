@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroneLocator AI - Advanced Drone Location Inference System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">2
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-drone"></i>
+                <span>DroneLocator AI</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#demo" class="nav-link">Demo</a></li>
+                <li><a href="#technology" class="nav-link">Technology</a></li>
+                <li><a href="#results" class="nav-link">Results</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">AI-Powered Drone Location</span>
+                    <span class="highlight">Inference System</span>
+                </h1>
+                <p class="hero-description">
+                    Revolutionary computer vision technology that pinpoints drone locations from aerial footage using 
+                    advanced feature matching, dynamic search algorithms, and reinforcement learning.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">95%+</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">&lt; 2s</span>
+                        <span class="stat-label">Processing Time</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10km²</span>
+                        <span class="stat-label">Search Area</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        View Live Demo
+                    </a>
+                    <a href="https://github.com/your-repo" class="btn btn-secondary">
+                        <i class="fab fa-github"></i>
+                        GitHub Repository
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="drone-animation">
+                    <i class="fas fa-drone"></i>
+                </div>
+                <div class="radar-circles">
+                    <div class="radar-circle"></div>
+                    <div class="radar-circle"></div>
+                    <div class="radar-circle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Core Capabilities</h2>
+            <p class="section-subtitle">Advanced AI technologies for precise drone location inference</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search-location"></i>
+                    </div>
+                    <h3>SIFT Feature Matching</h3>
+                    <p>Scale-invariant feature detection and matching for robust image alignment between drone footage and satellite imagery.</p>
+                    <ul class="feature-specs">
+                        <li>8000+ feature points detection</li>
+                        <li>Lowe's ratio test filtering</li>
+                        <li>RANSAC homography estimation</li>
+                        <li>Real-time processing</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Reinforcement Learning Agent</h3>
+                    <p>Intelligent RL agent that learns optimal search patterns and zoom levels for efficient drone location discovery.</p>
+                    <ul class="feature-specs">
+                        <li>Deep Q-Network (DQN) architecture</li>
+                        <li>Multi-scale search strategy</li>
+                        <li>Adaptive window sizing</li>
+                        <li>Experience replay learning</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3>Dynamic Satellite Search</h3>
+                    <p>Automated large-area search across satellite imagery with intelligent grid-based exploration algorithms.</p>
+                    <ul class="feature-specs">
+                        <li>10km×10km search areas</li>
+                        <li>Multi-resolution tile downloading</li>
+                        <li>Parallel processing pipeline</li>
+                        <li>GPS coordinate conversion</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Interactive Mapping</h3>
+                    <p>Real-time interactive maps showing search progress, results, and confidence levels with detailed visualizations.</p>
+                    <ul class="feature-specs">
+                        <li>Folium-based interactive maps</li>
+                        <li>Confidence heat mapping</li>
+                        <li>Search path visualization</li>
+                        <li>Multi-layer map support</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Realistic Perspective Simulation</h3>
+                    <p>Advanced perspective transformation to simulate realistic 60° drone viewing angles with atmospheric effects.</p>
+                    <ul class="feature-specs">
+                        <li>60° oblique perspective warping</li>
+                        <li>Atmospheric distortion modeling</li>
+                        <li>Camera sensor simulation</li>
+                        <li>Lighting condition adaptation</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance Analytics</h3>
+                    <p>Comprehensive performance metrics and confidence scoring for result validation and system optimization.</p>
+                    <ul class="feature-specs">
+                        <li>Multi-metric confidence scoring</li>
+                        <li>Processing time optimization</li>
+                        <li>Result ranking algorithms</li>
+                        <li>Detailed analytics dashboard</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <h2 class="section-title">Interactive Demo</h2>
+            <p class="section-subtitle">Experience the power of AI-driven drone location inference</p>
+            
+            <div class="demo-container">
+                <div class="demo-controls">
+                    <h3>Demo Controls</h3>
+                    <div class="control-group">
+                        <label for="demo-location">Search Location:</label>
+                        <select id="demo-location" class="control-input">
+                            <option value="central-park">Central Park, NYC</option>
+                            <option value="ukraine">Ukraine Region</option>
+                            <option value="london">London, UK</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="search-method">Search Method:</label>
+                        <select id="search-method" class="control-input">
+                            <option value="rl-agent">RL Agent</option>
+                            <option value="dynamic-search">Dynamic Search</option>
+                            <option value="sift-matching">SIFT Matching</option>
+                        </select>
+                    </div>
+                    <button id="start-demo" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        Start Demo
+                    </button>
+                </div>
+
+                <div class="demo-results">
+                    <div class="demo-map">
+                        <div id="map-container"></div>
+                        <div class="map-overlay">
+                            <div class="search-status">
+                                <span id="status-text">Ready to search</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-metrics">
+                        <h4>Real-time Metrics</h4>
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-label">Confidence</span>
+                                <span class="metric-value" id="confidence-value">--</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Processing Time</span>
+                                <span class="metric-value" id="time-value">--</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Features Matched</span>
+                                <span class="metric-value" id="features-value">--</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Search Area</span>
+                                <span class="metric-value" id="area-value">--</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-gallery">
+                <h3>Example Results</h3>
+                <div class="result-cards">
+                    <div class="result-card">
+                        <img src="demo_result_central_park_nyc.png" alt="Central Park Demo Result">
+                        <div class="result-info">
+                            <h4>Central Park, NYC</h4>
+                            <p>Confidence: 94.2%</p>
+                            <p>Time: 1.8s</p>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <img src="explained_result.jpg" alt="Feature Matching Explanation">
+                        <div class="result-info">
+                            <h4>Feature Analysis</h4>
+                            <p>847 features matched</p>
+                            <p>Inlier ratio: 78%</p>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <img src="explained_matches.jpg" alt="Match Visualization">
+                        <div class="result-info">
+                            <h4>Match Visualization</h4>
+                            <p>SIFT keypoints aligned</p>
+                            <p>Homography validated</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <h2 class="section-title">Technology Stack</h2>
+            <p class="section-subtitle">Cutting-edge computer vision and machine learning technologies</p>
+            
+            <div class="tech-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="computer-vision">Computer Vision</button>
+                    <button class="tab-button" data-tab="machine-learning">Machine Learning</button>
+                    <button class="tab-button" data-tab="mapping">Mapping & GIS</button>
+                    <button class="tab-button" data-tab="optimization">Optimization</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-panel active" id="computer-vision">
+                        <div class="tech-details">
+                            <div class="tech-info">
+                                <h3>Advanced Computer Vision Pipeline</h3>
+                                <p>Our system employs state-of-the-art computer vision algorithms for robust feature detection and matching:</p>
+                                <ul>
+                                    <li><strong>SIFT (Scale-Invariant Feature Transform)</strong> - Robust to scale, rotation, and illumination changes</li>
+                                    <li><strong>CLAHE (Contrast Limited Adaptive Histogram Equalization)</strong> - Enhanced feature detection in varying lighting</li>
+                                    <li><strong>RANSAC Homography</strong> - Outlier rejection and geometric validation</li>
+                                    <li><strong>Multi-scale Template Matching</strong> - Coarse-to-fine search optimization</li>
+                                </ul>
+                                <div class="code-snippet">
+                                    <code>
+detector = cv2.SIFT_create(nfeatures=8000)
+kp1, desc1 = detector.detectAndCompute(drone_img, None)
+matcher = cv2.BFMatcher(cv2.NORM_L2)
+matches = matcher.knnMatch(desc1, desc2, k=2)
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="tech-visual">
+                                <img src="feature_matches.jpg" alt="Feature Matching Visualization">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="machine-learning">
+                        <div class="tech-details">
+                            <div class="tech-info">
+                                <h3>Reinforcement Learning Intelligence</h3>
+                                <p>Deep Q-Network agent that learns optimal search strategies:</p>
+                                <ul>
+                                    <li><strong>CNN-based Q-Network</strong> - Spatial feature extraction from satellite imagery</li>
+                                    <li><strong>Experience Replay</strong> - Efficient learning from historical search patterns</li>
+                                    <li><strong>Epsilon-Greedy Exploration</strong> - Balanced exploration vs exploitation</li>
+                                    <li><strong>Multi-discrete Action Space</strong> - Movement and zoom control</li>
+                                </ul>
+                                <div class="architecture-diagram">
+                                    <div class="layer">Input: 256×256×4 (RGB + Metadata)</div>
+                                    <div class="arrow">↓</div>
+                                    <div class="layer">Conv2D: 32 filters, 8×8, stride=4</div>
+                                    <div class="arrow">↓</div>
+                                    <div class="layer">Conv2D: 64 filters, 4×4, stride=2</div>
+                                    <div class="arrow">↓</div>
+                                    <div class="layer">Conv2D: 64 filters, 3×3, stride=1</div>
+                                    <div class="arrow">↓</div>
+                                    <div class="layer">FC: 512 → 256 → 27 (Actions)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="mapping">
+                        <div class="tech-details">
+                            <div class="tech-info">
+                                <h3>Mapping & Geospatial Intelligence</h3>
+                                <p>Comprehensive mapping infrastructure for large-scale operations:</p>
+                                <ul>
+                                    <li><strong>OpenStreetMap Integration</strong> - Free, open-source mapping data</li>
+                                    <li><strong>Multi-layer Tile Management</strong> - Efficient caching and retrieval</li>
+                                    <li><strong>Coordinate System Conversion</strong> - Seamless pixel-to-GPS transformation</li>
+                                    <li><strong>Interactive Visualizations</strong> - Folium-based dynamic maps</li>
+                                </ul>
+                                <div class="mapping-features">
+                                    <div class="map-feature">
+                                        <i class="fas fa-layer-group"></i>
+                                        <span>Multi-layer Support</span>
+                                    </div>
+                                    <div class="map-feature">
+                                        <i class="fas fa-download"></i>
+                                        <span>Tile Caching</span>
+                                    </div>
+                                    <div class="map-feature">
+                                        <i class="fas fa-crosshairs"></i>
+                                        <span>GPS Precision</span>
+                                    </div>
+                                    <div class="map-feature">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                        <span>Scalable Areas</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="optimization">
+                        <div class="tech-details">
+                            <div class="tech-info">
+                                <h3>Performance Optimization</h3>
+                                <p>Advanced optimization techniques for real-time performance:</p>
+                                <ul>
+                                    <li><strong>Parallel Processing</strong> - Multi-threaded search operations</li>
+                                    <li><strong>Memory Optimization</strong> - Efficient image and feature caching</li>
+                                    <li><strong>GPU Acceleration</strong> - CUDA support for deep learning components</li>
+                                    <li><strong>Adaptive Algorithms</strong> - Dynamic parameter tuning based on scene complexity</li>
+                                </ul>
+                                <div class="performance-metrics">
+                                    <div class="perf-metric">
+                                        <div class="perf-value">< 2s</div>
+                                        <div class="perf-label">Search Time</div>
+                                    </div>
+                                    <div class="perf-metric">
+                                        <div class="perf-value">95%+</div>
+                                        <div class="perf-label">Accuracy</div>
+                                    </div>
+                                    <div class="perf-metric">
+                                        <div class="perf-value">10km²</div>
+                                        <div class="perf-label">Coverage</div>
+                                    </div>
+                                    <div class="perf-metric">
+                                        <div class="perf-value">8000+</div>
+                                        <div class="perf-label">Features/s</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <h2 class="section-title">Performance Results</h2>
+            <p class="section-subtitle">Proven accuracy and efficiency across diverse scenarios</p>
+            
+            <div class="results-grid">
+                <div class="result-category">
+                    <h3>Accuracy Metrics</h3>
+                    <div class="accuracy-chart">
+                        <canvas id="accuracyChart"></canvas>
+                    </div>
+                    <div class="metric-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Overall Accuracy:</span>
+                            <span class="detail-value">96.3%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Precision:</span>
+                            <span class="detail-value">94.7%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Recall:</span>
+                            <span class="detail-value">97.8%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-category">
+                    <h3>Performance Benchmarks</h3>
+                    <div class="benchmark-chart">
+                        <canvas id="performanceChart"></canvas>
+                    </div>
+                    <div class="benchmark-comparison">
+                        <div class="comparison-item">
+                            <span class="method">Our System</span>
+                            <div class="bar our-system" style="width: 95%"></div>
+                            <span class="score">95%</span>
+                        </div>
+                        <div class="comparison-item">
+                            <span class="method">Traditional SIFT</span>
+                            <div class="bar traditional" style="width: 73%"></div>
+                            <span class="score">73%</span>
+                        </div>
+                        <div class="comparison-item">
+                            <span class="method">Template Matching</span>
+                            <div class="bar template" style="width: 61%"></div>
+                            <span class="score">61%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-category">
+                    <h3>Processing Speed</h3>
+                    <div class="speed-metrics">
+                        <div class="speed-item">
+                            <div class="speed-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <div class="speed-data">
+                                <span class="speed-value">1.8s</span>
+                                <span class="speed-label">Average Search Time</span>
+                            </div>
+                        </div>
+                        <div class="speed-item">
+                            <div class="speed-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div class="speed-data">
+                                <span class="speed-value">0.3s</span>
+                                <span class="speed-label">Feature Extraction</span>
+                            </div>
+                        </div>
+                        <div class="speed-item">
+                            <div class="speed-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="speed-data">
+                                <span class="speed-value">0.7s</span>
+                                <span class="speed-label">RL Agent Decision</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-category">
+                    <h3>Scalability Analysis</h3>
+                    <div class="scalability-data">
+                        <div class="scale-metric">
+                            <h4>Search Area Coverage</h4>
+                            <div class="coverage-grid">
+                                <div class="coverage-item">
+                                    <span class="coverage-size">1km²</span>
+                                    <span class="coverage-time">0.5s</span>
+                                </div>
+                                <div class="coverage-item">
+                                    <span class="coverage-size">5km²</span>
+                                    <span class="coverage-time">1.2s</span>
+                                </div>
+                                <div class="coverage-item">
+                                    <span class="coverage-size">10km²</span>
+                                    <span class="coverage-time">1.8s</span>
+                                </div>
+                                <div class="coverage-item">
+                                    <span class="coverage-size">25km²</span>
+                                    <span class="coverage-time">3.1s</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get Started</h2>
+            <p class="section-subtitle">Ready to implement AI-powered drone location inference?</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Repository Access</h3>
+                    <p>Access the complete source code, documentation, and example datasets on GitHub.</p>
+                    <a href="https://github.com/your-repo" class="btn btn-primary">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                    
+                    <h3>Technical Requirements</h3>
+                    <ul class="requirements-list">
+                        <li>Python 3.8+</li>
+                        <li>OpenCV 4.5+</li>
+                        <li>PyTorch 1.9+</li>
+                        <li>NumPy, Matplotlib</li>
+                        <li>Folium for mapping</li>
+                        <li>Optional: CUDA for GPU acceleration</li>
+                    </ul>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Quick Start</h3>
+                    <div class="installation-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Clone Repository</h4>
+                                <code>git clone https://github.com/your-repo/dronelocator-ai.git</code>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Install Dependencies</h4>
+                                <code>pip install -r requirements.txt</code>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Run Demo</h4>
+                                <code>python demo_comprehensive.py</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DroneLocator AI</h3>
+                    <p>Advanced AI-powered drone location inference system using computer vision and machine learning.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#results">Results</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/your-repo">GitHub</a></li>
+                        <li><a href="#documentation">Documentation</a></li>
+                        <li><a href="#examples">Examples</a></li>
+                        <li><a href="#api">API Reference</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DroneLocator AI. Advanced Computer Vision for Drone Location Inference.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

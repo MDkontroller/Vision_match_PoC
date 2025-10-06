@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_825ec0b7afb269ab2e276125997b8cc2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_825ec0b7afb269ab2e276125997b8cc2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_825ec0b7afb269ab2e276125997b8cc2 = L.map(
+                "map_825ec0b7afb269ab2e276125997b8cc2",
+                {
+                    center: [40.7829, -73.9654],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_71ec669a4ee4bc98c92308190cfb22f0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_71ec669a4ee4bc98c92308190cfb22f0.addTo(map_825ec0b7afb269ab2e276125997b8cc2);
+        
+    
+            var tile_layer_b2ce6829d7a84626ea8e19f6281fbcf3 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b2ce6829d7a84626ea8e19f6281fbcf3.addTo(map_825ec0b7afb269ab2e276125997b8cc2);
+        
+    
+            var marker_0de8308c76e3695ee3305c791ffe8444 = L.marker(
+                [40.7829, -73.9654],
+                {
+}
+            ).addTo(map_825ec0b7afb269ab2e276125997b8cc2);
+        
+    
+            var icon_c38716b4d723b161437441fa4b3f1638 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a437d9fda888aa47a0b7ee2d7b7c45a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ddf87781cec979f383e73f1cc13e97c = $(`<div id="html_2ddf87781cec979f383e73f1cc13e97c" style="width: 100.0%; height: 100.0%;">Search Center<br>Lat: 40.782900<br>Lng: -73.965400</div>`)[0];
+                popup_a437d9fda888aa47a0b7ee2d7b7c45a0.setContent(html_2ddf87781cec979f383e73f1cc13e97c);
+            
+        
+
+        marker_0de8308c76e3695ee3305c791ffe8444.bindPopup(popup_a437d9fda888aa47a0b7ee2d7b7c45a0)
+        ;
+
+        
+    
+    
+            marker_0de8308c76e3695ee3305c791ffe8444.bindTooltip(
+                `<div>
+                     Search Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0de8308c76e3695ee3305c791ffe8444.setIcon(icon_c38716b4d723b161437441fa4b3f1638);
+            
+    
+            var rectangle_67af40e1cc7a707ffda96030e1bfc905 = L.rectangle(
+                [[40.737854954954955, -74.01044504504505], [40.82794504504504, -73.92035495495496]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_825ec0b7afb269ab2e276125997b8cc2);
+        
+    
+        var popup_7bc5b96169359746560c614e150a927f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_803ddb4a0243ff994c39eb4c4fdcc0ab = $(`<div id="html_803ddb4a0243ff994c39eb4c4fdcc0ab" style="width: 100.0%; height: 100.0%;">10km x 10km Search Area</div>`)[0];
+                popup_7bc5b96169359746560c614e150a927f.setContent(html_803ddb4a0243ff994c39eb4c4fdcc0ab);
+            
+        
+
+        rectangle_67af40e1cc7a707ffda96030e1bfc905.bindPopup(popup_7bc5b96169359746560c614e150a927f)
+        ;
+
+        
+    
+    
+            var marker_f932d08a38b5d65f87b19732ebbb2ae2 = L.marker(
+                [40.80992702702702, -73.93837297297297],
+                {
+}
+            ).addTo(map_825ec0b7afb269ab2e276125997b8cc2);
+        
+    
+            var icon_ebd12fbb082512f32d4bc0aee29c7104 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_220cae8071686676220f801bc863bbb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44c9744bf80a805bd4c8db05f781dcd9 = $(`<div id="html_44c9744bf80a805bd4c8db05f781dcd9" style="width: 100.0%; height: 100.0%;">             <b>How to use:</b><br>             1. Navigate to your area of interest<br>             2. Note the coordinates<br>             3. Use get_area_image() to download<br>             4. Load your drone image<br>             5. Find matches!             </div>`)[0];
+                popup_220cae8071686676220f801bc863bbb4.setContent(html_44c9744bf80a805bd4c8db05f781dcd9);
+            
+        
+
+        marker_f932d08a38b5d65f87b19732ebbb2ae2.bindPopup(popup_220cae8071686676220f801bc863bbb4)
+        ;
+
+        
+    
+    
+                marker_f932d08a38b5d65f87b19732ebbb2ae2.setIcon(icon_ebd12fbb082512f32d4bc0aee29c7104);
+            
+    
+            var layer_control_76edb13a247245b60b9834a6ec3bceb5_layers = {
+                base_layers : {
+                    "OpenStreetMap" : tile_layer_71ec669a4ee4bc98c92308190cfb22f0,
+                    "Satellite" : tile_layer_b2ce6829d7a84626ea8e19f6281fbcf3,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_76edb13a247245b60b9834a6ec3bceb5 = L.control.layers(
+                layer_control_76edb13a247245b60b9834a6ec3bceb5_layers.base_layers,
+                layer_control_76edb13a247245b60b9834a6ec3bceb5_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_825ec0b7afb269ab2e276125997b8cc2);
+
+        
+</script>
+</html>
